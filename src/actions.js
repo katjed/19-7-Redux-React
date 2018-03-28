@@ -39,7 +39,7 @@ function thumbUpComment(id) {
 function thumbDownComment(id) {
 	return {
 		type: THUMB_DOWN_COMMENT,
-		id
+		id 
 	}
 }
 
