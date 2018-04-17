@@ -14,14 +14,6 @@ export function addComment(text) {
 	}
 }
 
-export function editComment(text, id) {
-	return {
-		type: EDIT_COMMENT,
-		text,
-		id
-	}
-}
-
 export function removeComment(id) {
 	return {
 		type: REMOVE_COMMENT,
@@ -43,3 +35,10 @@ export function thumbDownComment(id) {
 	}
 }
 
+export function editComment(id, content) {
+	return {
+		type: EDIT_COMMENT,
+		id,
+		content
+	}
+}
