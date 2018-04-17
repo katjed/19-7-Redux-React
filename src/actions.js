@@ -14,11 +14,11 @@ export function addComment(text) {
 	}
 }
 
-export function editComment(text, id) {
+export function editComment(id, content) {
 	return {
 		type: EDIT_COMMENT,
-		text,
-		id
+		id,
+		content
 	}
 }
 
